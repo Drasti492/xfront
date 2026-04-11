@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Him | Lumina Intimates</title>
+
+    <link rel="stylesheet" href="../css/x.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-[#fff0f5] text-gray-800">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-pink-600 rounded-2xl flex items-center justify-center">
+                <span class="text-white font-bold">LI</span>
+            </div>
+            <span class="text-2xl font-semibold text-pink-600">Lumina</span>
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="../index.html">Home</a>
+            <a href="her.html">For Her</a>
+            <a href="him.html">For Him</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-6">
+
+            <!-- CART -->
+            <button onclick="window.location.href='cart.html'" class="flex items-center gap-2">
+                <i class="fa fa-shopping-cart text-xl"></i>
+                <span id="cart-count" class="text-pink-600 font-semibold text-sm">0</span>
+            </button>
+
+            <!-- HAMBURGER -->
+            <button id="hamburger" class="md:hidden text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<section class="py-14 bg-white text-center px-6">
+    <h1 class="text-3xl md:text-5xl font-semibold">For Him</h1>
+    <p class="text-gray-500 mt-3 max-w-xl mx-auto text-sm md:text-base">
+        Premium strokers, rings, and prostate stimulators — discreet, powerful, and built for real satisfaction.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="py-10 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+<div class="product-card">
+    <img src="../images/him/Tracy Dog Realistic Male Masturbator.jpg">
+    <div class="p-4">
+        <h4>Tracy Dog Realistic Male Masturbator</h4>
+        <p class="desc">Tracy's Dog Realistic Male Masturbator, Adult Sex Toys for Men, Soft Fleshy Men Adult Toys, Lifelike Textured Vagina Man Masturbation Cup, Premium Quality Male Pocket Pussy Stroker</p>
+        <div class="price-row">
+            <span class="price">KSh 2575</span>
+            <button onclick="addToCart('Tracy Dog Realistic Male Masturbator', 2575, '../images/him/Tracy Dog Realistic Male Masturbator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/him/Tor 3 Vibrating Cock Ring.jpg">
+    <div class="p-4">
+        <h4>Tor 3 Vibrating Cock Ring</h4>
+        <p class="desc">LELO TOR 3 Vibrating Penis Ring App Connected Adult Toy for Man and Woman, Couples Sex Toy with 8 Pleasure Settings for Enhanced Sensation, Silicone Cock Ring, Base Blue</p>
+        <div class="price-row">
+            <span class="price">KSh 9035</span>
+            <button onclick="addToCart('Tor 3 Vibrating Cock Ring', 9035, '../images/him/Tor 3 Vibrating Cock Ring.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/him/Gush 2 Automatic Stroker.jpg">
+    <div class="p-4">
+        <h4>Gush 2 Automatic Stroker</h4>
+        <p class="desc">Male Automatic Masturbator Sex Toys - Hands Free Visible Masturbator Cup Blowjob Machine with 10 Thrusting & 2 Sleeves & Wearable Strap Adult Pocket Pussy for Men Pleasure | 50db Quiet | White</p>
+        <div class="price-row">
+            <span class="price">KSh 7410</span>
+            <button onclick="addToCart('Gush 2 Automatic Stroker', 7410, '../images/him/Gush 2 Automatic Stroker.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/him/Tenga Flip Zero Masturbator.jpg">
+    <div class="p-4">
+        <h4>Tenga Flip Zero Masturbator</h4>
+        <p class="desc">Fleshlight Girls | Kazumi | Kumzumi | Men's Sex Toy | Onahole</p>
+        <div class="price-row">
+            <span class="price">KSh 5200</span>
+            <button onclick="addToCart('Tenga Flip Zero Masturbator', 5200, '../images/him/Tenga Flip Zero Masturbator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/him/Male Masturbator Sex Doll.jpg">
+    <div class="p-4">
+        <h4>Male Masturbator Sex Doll</h4>
+        <p class="desc">Male Masturbator Sex Doll for Men pocket pussies Realistic Adult Sex Toys for Men, 5.8LB Entry-Level Ass Lifelike Soft Butt with Vagina and Anal Channel for Several Sex Positions (Flesh)</p>
+        <div class="price-row">
+            <span class="price">KSh 7085</span>
+            <button onclick="addToCart('Male Masturbator Sex Doll', 7085, '../images/him/Male Masturbator Sex Doll.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/him/Echo Vibrating Cock Ring.jpg">
+    <div class="p-4">
+        <h4>Echo Vibrating Cock Ring</h4>
+        <p class="desc">Vibrating Cock Ring Couples Sex Toys - MOOLIGIRL Dual Penis Ring Vibrator with Fox-Shaped Clitoral Stimulator & 4.6in G Spot Vibrator, 10 Vibration Adult Toys for Men Women, Female Sex Toy</p>
+        <div class="price-row">
+            <span class="price">KSh 3185</span>
+            <button onclick="addToCart('Echo Vibrating Cock Ring', 3185, '../images/him/Echo Vibrating Cock Ring.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/him/EINSEO Penis Pump.jpg">
+    <div class="p-4">
+        <h4>EINSEO Penis Pump</h4>
+        <p class="desc">EINSEO Sex Toys for Men Penis Pump - AI Sync Waterproof Male Masturbator Stroker with 7 Sucking Thrusting Rotating & 7 Licking Modes, Adult Toys Pocket Pussy Mens Sex Toy Blowjob Sex Machine Bath Item</p>
+        <div class="price-row">
+            <span class="price">KSh 4725</span>
+            <button onclick="addToCart('EINSEO Penis Pump', 4725, '../images/him/EINSEO Penis Pump.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/him/Anal Probe Electrode.jpg">
+    <div class="p-4">
+        <h4>Anal Probe Electrode</h4>
+        <p class="desc">Discount TENS - Anal Probe Electrode for TENS, EMS, E-Stim, Electro Stim Units – Pelvic Floor Exerciser & Stimulator, Stainless Steel & Bio-Plastic with 2mm Pin Connector. Model A2</p>
+        <div class="price-row">
+            <span class="price">KSh 3085</span>
+            <button onclick="addToCart('Core Pulse Prostate Stimulator', 3085, '../images/him/Anal Probe Electrode.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white/70 py-12 text-center text-sm">
+    © 2026 Lumina Intimates Kenya
+</footer>
+
+<script src="../js/x.js"></script>
+
+</body>
+</html>

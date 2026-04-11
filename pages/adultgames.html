@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adult Games | Lumina Intimates</title>
+
+    <link rel="stylesheet" href="../css/x.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-[#fff0f5] text-gray-800">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-pink-600 rounded-2xl flex items-center justify-center">
+                <span class="text-white font-bold">LI</span>
+            </div>
+            <span class="text-2xl font-semibold text-pink-600">Lumina</span>
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="../index.html">Home</a>
+            <a href="her.html">For Her</a>
+            <a href="him.html">For Him</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-6">
+
+    <!-- SEARCH ICON -->
+         <button id="search-toggle" class="text-xl hover:text-pink-600">
+        <i class="fa fa-search"></i>
+         </button>
+
+    <!-- CART -->
+    <button onclick="window.location.href='cart.html'" class="flex items-center gap-2">
+        <i class="fa fa-shopping-cart text-xl"></i>
+        <span id="cart-count" class="text-pink-600 font-semibold text-sm">0</span>
+    </button>
+
+    <!-- HAMBURGER -->
+    <button id="hamburger" class="md:hidden text-xl">
+        <i class="fa fa-bars"></i>
+    </button>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- SEARCH BAR -->
+<div id="search-bar" class="hidden bg-white border-b px-6 py-4">
+    <div class="max-w-7xl mx-auto">
+        <input 
+            type="text" 
+            id="search-input"
+            placeholder="Search products..." 
+            class="w-full p-4 rounded-2xl border border-pink-200 focus:outline-none focus:border-pink-500"
+        >
+    </div>
+</div>
+
+
+<!-- HEADER -->
+<section class="py-14 bg-white text-center px-6">
+    <h1 class="text-3xl md:text-5xl font-semibold">Adult Games</h1>
+    <p class="text-gray-500 mt-3 max-w-xl mx-auto text-sm md:text-base">
+        Spice things up with fun, intimate and exciting adult games designed for couples and playful experiences.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="py-10 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+<div class="product-card">
+    <img src="../images/adult games/160 Cards Couples Games for Adults.jpg">
+    <div class="p-4">
+        <h4>160 Cards Couples Games for Adults</h4>
+        <p class="desc">Romantic & Naughty Game Date Night Ideas to Spark Conversation & Intimacy - 4 Levels of Spicy Dares - Anniversary, Valentines Love Gift for Boyfriend & Girlfriend</p>
+        <div class="price-row">
+            <span class="price">KSh 1675</span>
+            <button onclick="addToCart('160 Cards Couples Games for Adults', 1675, '../images/adult games/160 Cards Couples Games for Adults.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/adult games/Couples Card Games for Date Night.jpg">
+    <div class="p-4">
+        <h4>Couples Card Games for Date Night</h4>
+        <p class="desc">RISKY COUPLES | Couples Card Games for Date Night: 150 Questions & Challenges for Your Partner | Romantic Card Game for Anniversary, Valentines, Birthday, or Bridal Party</p>
+        <div class="price-row">
+            <span class="price">KSh 1050</span>
+            <button onclick="addToCart('Couples Card Games for Date Night', 1050, '../images/adult games/Couples Card Games for Date Night.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/adult games/Adults Poker Games.jpg">
+    <div class="p-4">
+        <h4>Adults Poker Games</h4>
+        <p class="desc">Adults Poker Games - Couple Game for Date Night - Deeper Relationship Connection Card Games - Good Idea for Gift</p>
+        <div class="price-row">
+            <span class="price">KSh 1175</span>
+            <button onclick="addToCart('Adults Poker Games', 1175, '../images/adult games/Adults Poker Games.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/adult games/Talk Flirt Dare Cards.jpg">
+    <div class="p-4">
+        <h4>Talk Flirt Dare Cards</h4>
+        <p class="desc">Talk Flirt Dare Couples Game, Gift for Couples, Fun Romantic Date Night Card Game, Conversation and Challenge Cards to Build Connection, Intimacy and Playfulness</p>
+        <div class="price-row">
+            <span class="price">KSh 1533</span>
+            <button onclick="addToCart('Talk Flirt Dare Cards', 1533, '../images/adult games/Talk Flirt Dare Cards.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/adult games/Pick Your Poison cards.jpg">
+    <div class="p-4">
+        <h4>Pick Your Poison cards</h4>
+        <p class="desc">Pick Your Poison After Dark + Expansion Set Party Game - The “What Would You Rather Do?” Adult Card Game for White Elephant Parties, Stocking Stuffers + Board Games Night with Friends</p>
+        <div class="price-row">
+            <span class="price">KSh 1320</span>
+            <button onclick="addToCart('Pick Your Poison cards', 1320, '../images/adult games/Pick Your Poison cards.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/adult games/Intimacy Card Game.jpg">
+    <div class="p-4">
+        <h4>Intimacy Card Game</h4>
+        <p class="desc">BestSelf Intimacy Deck – 170 Conversation Cards for Couples, Fun and Romantic Card Game for Deeper Connection and Pillow Talk</p>
+        <div class="price-row">
+            <span class="price">KSh 1680</span>
+            <button onclick="addToCart('Intimacy Card Game', 1680, '../images/adult games/Intimacy Card Game.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/adult games/50 Positions of Bondage.jpg">
+    <div class="p-4">
+        <h4>50 Positions of Bondage</h4>
+        <p class="desc">The Hottest Sex Position Cards Illustrated with Pictures, 50 BDSM Bondage Position Ideas Available for Erotic Games Night, BDSM Game to Improve Relationships, Couple Sex Games for Adults</p>
+        <div class="price-row">
+            <span class="price">KSh 1475</span>
+            <button onclick="addToCart('50 Positions of Bondage', 1475, '../images/adult games/50 Positions of Bondage.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/adult games/4 Piece Sex Dice.jpg">
+    <div class="p-4">
+        <h4>4 Piece Sex Dice</h4>
+        <p class="desc">Date Night Dice Games for Couple, Decision Dice Game for Romantic Ideas, Funny Naughty Gifts for Him Acrylic Position Decision Toy（Glow in the Dark 4 PCS</p>
+        <div class="price-row">
+            <span class="price">KSh 1640</span>
+            <button onclick="addToCart('4 Piece Sex Dice', 1640, '../images/adult games/4 Piece Sex Dice.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/adult games/Romantic Naughty Dice Set.webp">
+    <div class="p-4">
+        <h4>Romantic Naughty Dice Set</h4>
+        <p class="desc">Romantic Naughty Dice Set for Adults Games, Date Night Dice Couples Gift, Fun Night Dating Games for Adult, Love Dice, Valentines Day Gifts for Her Him Men Women Anniversary Couples 10CF9</p>
+        <div class="price-row">
+            <span class="price">KSh 1440</span>
+            <button onclick="addToCart('Romantic Naughty Dice Set', 1440, '../images/adult games/Romantic Naughty Dice Set.webp')">ADD</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white/70 py-12 text-center text-sm">
+    © 2026 Lumina Intimates Kenya
+</footer>
+
+<script src="../js/x.js"></script>
+
+</body>
+</html>

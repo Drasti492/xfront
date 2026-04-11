@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Her | Lumina Intimates</title>
+
+    <link rel="stylesheet" href="../css/x.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-[#fff0f5] text-gray-800">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-pink-600 rounded-2xl flex items-center justify-center">
+                <span class="text-white font-bold">LI</span>
+            </div>
+            <span class="text-2xl font-semibold text-pink-600">Lumina</span>
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="../index.html">Home</a>
+            <a href="her.html">For Her</a>
+            <a href="him.html">For Him</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-6">
+
+            <!-- CART -->
+            <button onclick="window.location.href='cart.html'" class="flex items-center gap-2">
+                <i class="fa fa-shopping-cart text-xl"></i>
+                <span id="cart-count" class="text-pink-600 font-semibold text-sm">0</span>
+            </button>
+
+            <!-- HAMBURGER -->
+            <button id="hamburger" class="md:hidden text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<section class="py-14 bg-white text-center px-6">
+    <h1 class="text-3xl md:text-5xl font-semibold">For Her</h1>
+    <p class="text-gray-500 mt-3 max-w-xl mx-auto text-sm md:text-base">
+        Premium vibrators, stimulators, and intimate essentials — body-safe, discreet, and crafted for unforgettable experiences.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="py-10 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+<div class="product-card">
+    <img src="../images/her/Rose Clitoral Suction Stimulator.jpg">
+    <div class="p-4">
+        <h4>Rose Clitoral Suction Stimulator</h4>
+        <p class="desc">Sex Toys Rose Dildo Vibrator - Upgraded Adult Toys with 5 Sucking & Vibrating Modes for Women Clitoral Nipple, Rose Sucker Sex Toy Clitoral G Spot Vibrators for Woman Couples Adult Sex Games</p>
+        <div class="price-row">
+            <span class="price">KSh 2820</span>
+            <button onclick="addToCart('Rose Clitoral Suction Stimulator', 2820, '../images/her/Rose Clitoral Suction Stimulator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/her/Tango X Bullet Vibrator.jpg">
+    <div class="p-4">
+        <h4>Tango X Bullet Vibrator</h4>
+        <p class="desc">We-Vibe Tango X Bullet Vibrator Sex Toy | Adult Toys for Women & Couples | Vibrating Sex Toy for Her | Mini Clitoris Stimulator | 8 Intensity Levels | Gifts for Women | Waterproof | Red</p>
+        <div class="price-row">
+            <span class="price">KSh 5550</span>
+            <button onclick="addToCart('Tango X Bullet Vibrator', 5550, '../images/her/Tango X Bullet Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/her/bed geek Cordless Wand Massager.jpg">
+    <div class="p-4">
+        <h4>bed geek Cordless Wand Massager</h4>
+        <p class="desc">bed geek Cordless Wand Massager – Super Powerful Handheld Massage with 20 Speeds & 8 Patterns, Soft Silicone Head, Quiet Motor, LED Display, Body-Safe & Waterproof Black & Rose Gold</p>
+        <div class="price-row">
+            <span class="price">KSh 4565</span>
+            <button onclick="addToCart('bed geek Cordless Wand Massager', 4565, '../images/her/bed geek Cordless Wand Massager.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/her/Magic Wand Rechargeable.jpg">
+    <div class="p-4">
+        <h4>Magic Wand Rechargeable</h4>
+        <p class="desc">Authentic Magic Wand Rechargeable Massager - Ultra-Powerful Multispeed Cordless Personal Massager with Free IntiMD Pin Point Massage Attachment</p>
+        <div class="price-row">
+            <span class="price">KSh 8415</span>
+            <button onclick="addToCart('Magic Wand Rechargeable', 8415, '../images/her/Magic Wand Rechargeable.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/her/Greedy Girl Rabbit Vibrator.jpg">
+    <div class="p-4">
+        <h4>Greedy Girl Rabbit Vibrator</h4>
+        <p class="desc">Fifty Shades of Grey Greedy Girl Rabbit Vibrator | 5.5 Inch Silicone G Spot Vibrator for Women | Vibrating Dildo Dual Stimulation Adult Sex Toy | Waterproof Personal Massager | Gifts for Women | Black</p>
+        <div class="price-row">
+            <span class="price">KSh 7150</span>
+            <button onclick="addToCart('Greedy Girl Rabbit Vibrator', 7150, '../images/her/Greedy Girl Rabbit Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/her/Pure Wand Stainless Steel Dildo.jpg">
+    <div class="p-4">
+        <h4>Pure Wand Stainless Steel Dildo</h4>
+        <p class="desc">Njoy Pure Adults G Spot Metal Wand 7.5 Inch Polished Steel</p>
+        <div class="price-row">
+            <span class="price">KSh 11700</span>
+            <button onclick="addToCart('Pure Wand Stainless Steel Dildo', 11700, '../images/her/Pure Wand Stainless Steel Dildo.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/her/Satisfyer Pro 2 Suction.jpg">
+    <div class="p-4">
+        <h4>Satisfyer Pro 2 Suction</h4>
+        <p class="desc">Satisfyer Pro 2 Generation 3 (Bluetooth Version) with Liquid Air Vibrator Sex Toy | Adult Toys for Women | Sucking Clitoral Stimulator | Vibrating Sexual Pleasure Device | Vibrators (Wine Red)</p>
+        <div class="price-row">
+            <span class="price">KSh 4200</span>
+            <button onclick="addToCart('Satisfyer Pro 2 Suction', 4200, '../images/her/Satisfyer Pro 2 Suction.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/her/Gleam Curve G-Spot Vibrator.jpg">
+    <div class="p-4">
+        <h4>Gleam Curve G-Spot Vibrator</h4>
+        <p class="desc">Tracy's Dog Rabbit Vibrator Sex Toys - Clitoral Kissing G Spot Vibrator for Women & Couples, Adult Toy for Dual Stimulation with 10 Vibrations, Flexible & Full Silicone Vibrating Dildo, Junibell</p>
+        <div class="price-row">
+            <span class="price">KSh 4175</span>
+            <button onclick="addToCart('Gleam Curve G-Spot Vibrator', 4175, '../images/her/Gleam Curve G-Spot Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white/70 py-12 text-center text-sm">
+    © 2026 Lumina Intimates Kenya
+</footer>
+
+<script src="../js/x.js"></script>
+
+</body>
+</html>

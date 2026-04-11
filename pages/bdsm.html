@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDSM & Kegel | Lumina Intimates</title>
+
+    <link rel="stylesheet" href="../css/x.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-[#fff0f5] text-gray-800">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-pink-600 rounded-2xl flex items-center justify-center">
+                <span class="text-white font-bold">LI</span>
+            </div>
+            <span class="text-2xl font-semibold text-pink-600">Lumina</span>
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="../index.html">Home</a>
+            <a href="her.html">For Her</a>
+            <a href="him.html">For Him</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-6">
+
+            <!-- CART -->
+            <button onclick="window.location.href='cart.html'" class="flex items-center gap-2">
+                <i class="fa fa-shopping-cart text-xl"></i>
+                <span id="cart-count" class="text-pink-600 font-semibold text-sm">0</span>
+            </button>
+
+            <!-- HAMBURGER -->
+            <button id="hamburger" class="md:hidden text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<section class="py-14 bg-white text-center px-6">
+    <h1 class="text-3xl md:text-5xl font-semibold">BDSM & Kegel Toys</h1>
+    <p class="text-gray-500 mt-3 max-w-xl mx-auto text-sm md:text-base">
+        Get yourself a bondage gear set today from Lumina Intimates and have it with you in a few hours.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="py-10 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+<div class="product-card">
+    <img src="../images/bdsm/lumina BDSM Blindfold Patch.jpg">
+    <div class="p-4">
+        <h4>BDSM Blindfold Patch</h4>
+        <p class="desc">Sexy PU Leather Half Face Mask Cat Masquerade Mask BDSM Bondage Cosplay Mask Halloween Valentine's Day Accessories</p>
+        <div class="price-row">
+            <span class="price">KSh 1042</span>
+            <button onclick="addToCart('BDSM Blindfold Patch', 1042, '../images/bdsm/lumina BDSM Blindfold Patch.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/bdsm/lumina Soft Rubber Metal Nipple Clamps with Bells.jpg">
+    <div class="p-4">
+        <h4>Lumina Soft Rubber Metal Nipple Clamps with Bells</h4>
+        <p class="desc">Nipple Clips Nipple Clamps Clips with Bells Adjustable Metal Nipple Clamps Non Piercing Nipple Clips for Women Couple</p>
+        <div class="price-row">
+            <span class="price">KSh 1500</span>
+            <button onclick="addToCart('Lumina Soft Rubber Metal Nipple Clamps with Bells', 1500, '../images/bdsm/lumina Soft Rubber Metal Nipple Clamps with Bells.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/bdsm/lumina Adult Game Slave Bdsm Bondage Set Hand Cuffs.jpg">
+    <div class="p-4">
+        <h4>Lumina Adult Game Slave Bdsm Bondage Set Hand Cuffs</h4>
+        <p class="desc">7-Pcs BDSM Kit for Beginners, Black Bondage Set for Couples with Adjustable Wrist & Ankle Cuffs, Collar, Blindfold, Ball Gag, Flogger & Ropes, Complete Adult Toy</p>
+        <div class="price-row">
+            <span class="price">KSh 2780</span>
+            <button onclick="addToCart('Lumina Adult Game Slave Bdsm Bondage Set Hand Cuffs', 2780, '../images/bdsm/lumina Adult Game Slave Bdsm Bondage Set Hand Cuffs.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/bdsm/lumina  Adult Game Slave Bdsm Bondage Set Spanking Whip.jpg">
+    <div class="p-4">
+        <h4>Lumina Adult Game Slave Bdsm Bondage Set Spanking Whip</h4>
+        <p class="desc">Spanking Paddle for Sex Whips for Spanking Adults Sets BDSM Whip Bondage Paddle Spanking Toys Flogger Sex Whip Soft</p>
+        <div class="price-row">
+            <span class="price">KSh 1151</span>
+            <button onclick="addToCart('Lumina Adult Game Slave Bdsm Bondage Set Spanking Whip', 1151, '../images/bdsm/lumina  Adult Game Slave Bdsm Bondage Set Spanking Whip.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/bdsm/Silicone Handcuffs Bondage Restraints BDSM.jpg">
+    <div class="p-4">
+        <h4>Silicone Handcuffs Bondage Restraints BDSM</h4>
+        <p class="desc">Handcuffs for Grownups Bedroom BDSM Kit - Sex Hand Cuff Bracelets - Bondage Restraints - Soft Cotton Lining for Complete Comfort</p>
+        <div class="price-row">
+            <span class="price">KSh 1540</span>
+            <button onclick="addToCart('Silicone Handcuffs Bondage Restraints BDSM', 1540, '../images/bdsm/Silicone Handcuffs Bondage Restraints BDSM.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/bdsm/lumina Leather BDSM Cuffs.jpg">
+    <div class="p-4">
+        <h4>Lumina Leather BDSM Cuffs</h4>
+        <p class="desc">BDSM Bondage Restraints Sex Toys - Adjustable Soft Leather Handcuffs Ankle Cuffs Adult Toy, Furniture Restraint Kit for Men Women Couples SM Game Play | Black</p>
+        <div class="price-row">
+            <span class="price">KSh 1060</span>
+            <button onclick="addToCart('Lumina Leather BDSM Cuffs', 1060, '../images/bdsm/lumina Leather BDSM Cuffs.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/bdsm/Feather Tickler BDSM Sensory Play.jpg">
+    <div class="p-4">
+        <h4>Feather Tickler BDSM Sensory Play</h4>
+        <p class="desc">16-Inch Faux Feather Tickler for Play French Tickler for Bedroom Black</p>
+        <div class="price-row">
+            <span class="price">KSh 1119</span>
+            <button onclick="addToCart('Feather Tickler BDSM Sensory Play', 1119, '../images/bdsm/Feather Tickler BDSM Sensory Play.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/bdsm/Lumina 11pcs Bondage Set BDSM Kit.jpg">
+    <div class="p-4">
+        <h4>Lumina 11pcs Bondage Set BDSM Kit</h4>
+        <p class="desc">UTIMI Bondage for Sex 11 Pcs BDSM Leather Bondage Sets Restraint Kits for Women and Couples</p>
+        <div class="price-row">
+            <span class="price">KSh 4418</span>
+            <button onclick="addToCart('Lumina 11pcs Bondage Set BDSM Kit', 4418, '../images/bdsm/Lumina 11pcs Bondage Set BDSM Kit.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/bdsm/BDSM Ball Mouth Gag with Cuffs Restraints.jpg">
+    <div class="p-4">
+        <h4>BDSM Ball Mouth Gag with Cuffs Restraints</h4>
+        <p class="desc">Sex Bondage Restraints Kit Ball Mouth Gag with Bondage Handcuffs Wrist Restraint Sex Cuffs Adjustable Ball Gag Collar Bondage Set BDSM Sex Toys for Adult Couples SM Games for Women Men</p>
+        <div class="price-row">
+            <span class="price">KSh 1500</span>
+            <button onclick="addToCart('BDSM Ball Mouth Gag with Cuffs Restraints', 1500, '../images/bdsm/BDSM Ball Mouth Gag with Cuffs Restraints.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/bdsm/Leather Choker Neck Collar with Leash BDSM.jpg">
+    <div class="p-4">
+        <h4>Leather Choker Neck Collar with Leash BDSM</h4>
+        <p class="desc">Leather Choker Collars for Men Women Detachable Leash Chain Durable Leather Collar with Alloy Buckle Black</p>
+        <div class="price-row">
+            <span class="price">KSh 1310</span>
+            <button onclick="addToCart('Leather Choker Neck Collar with Leash BDSM', 1310, '../images/bdsm/Leather Choker Neck Collar with Leash BDSM.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white/70 py-12 text-center text-sm">
+    © 2026 Lumina Intimates Kenya
+</footer>
+
+<script src="../js/x.js"></script>
+
+</body>
+</html>

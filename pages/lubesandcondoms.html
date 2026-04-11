@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lubes & Condoms | Lumina Intimates</title>
+
+    <link rel="stylesheet" href="../css/x.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-[#fff0f5] text-gray-800">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-pink-600 rounded-2xl flex items-center justify-center">
+                <span class="text-white font-bold">LI</span>
+            </div>
+            <span class="text-2xl font-semibold text-pink-600">Lumina</span>
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="../index.html">Home</a>
+            <a href="her.html">For Her</a>
+            <a href="him.html">For Him</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-6">
+
+            <!-- CART -->
+            <button onclick="window.location.href='cart.html'" class="flex items-center gap-2">
+                <i class="fa fa-shopping-cart text-xl"></i>
+                <span id="cart-count" class="text-pink-600 font-semibold text-sm">0</span>
+            </button>
+
+            <!-- HAMBURGER -->
+            <button id="hamburger" class="md:hidden text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<section class="py-14 bg-white text-center px-6">
+    <h1 class="text-3xl md:text-5xl font-semibold">Lubes & Condoms</h1>
+    <p class="text-gray-500 mt-3 max-w-xl mx-auto text-sm md:text-base">
+        Get the best water-based lubes and lubricants in Kenya from Lumina Intimates. Enjoy fast and discreet shipping.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="py-10 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+<div class="product-card">
+    <img src="../images/lubes/Durex 50ml Sex Lube Water Based.jpg">
+    <div class="p-4">
+        <h4>Durex 50ml Sex Lube Water Based</h4>
+        <p class="desc">Durex Water Based Lube for Sex, Cherry Flavored, Anal & Sex Lube for Women & Men, Personal Lubricant for Oral & Anal,Lubricant & Toy Lube, 3.38 fl oz</p>
+        <div class="price-row">
+            <span class="price">KSh 1060</span>
+            <button onclick="addToCart('Durex 50ml Sex Lube Water Based', 1060, '../images/lubes/Durex 50ml Sex Lube Water Based.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/lubes/KLY Lubricating Jelly.jpg">
+    <div class="p-4">
+        <h4>KLY Lubricating Jelly 42g</h4>
+        <p class="desc">K-Y Jelly Water Based Lube For Sex, Anal Lube, Non-Greasy Water Based Personal Lubricant, pH Friendly Sex Lube Can Be Used With Sex Toys For Women & Male Sex Toys, Condom Friendly Personal Lube, 2 oz</p>
+        <div class="price-row">
+            <span class="price">KSh 950</span>
+            <button onclick="addToCart('KLY Lubricating Jelly 42g', 950, '../images/lubes/KLY Lubricating Jelly.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/lubes/Massage Oil Infused with Essential Oils.jpg">
+    <div class="p-4">
+        <h4>Massage Oil Infused with Essential Oils</h4>
+        <p class="desc">Arnica Sore Muscle Massage Oil – 100% Pure & Natural - Massage Therapy for Muscles & Joints – Body Oil Infused with Arnica Extract, Lavender Oil, Peppermint Oil & Chamomile Oil – 8 FL OZ</p>
+        <div class="price-row">
+            <span class="price">KSh 850</span>
+            <button onclick="addToCart('Massage Oil Infused with Essential Oils', 850, '../images/lubes/Massage Oil Infused with Essential Oils.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/lubes/Siyi Water Based Lube 215ml.jpg">
+    <div class="p-4">
+        <h4>Siyi Water Based Lube 215ml</h4>
+        <p class="desc">SiYi Water-Based Personal Lubricant, Oil-Like Silky Glide, Non-Sticky & Easy Clean, Toy Compatible Lube for Solo & Couples, Pump Dispenser + Finger Sleeves, 4 Fl oz (120 mL)</p>
+        <div class="price-row">
+            <span class="price">KSh 1060</span>
+            <button onclick="addToCart('Siyi Water Based Lube 215ml', 1060, '../images/lubes/Siyi Water Based Lube 215ml.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/lubes/Fruits Fun 80ml Flavored Lubricant.jpg">
+    <div class="p-4">
+        <h4>Fruits Fun 80ml Flavored Lubricant</h4>
+        <p class="desc">Fruits Flavor Lube Personal Lubricants Water Based Long Lasting Sex lube for Oral Sex Fantasy Strawberry Cherry Orange Peach Bleberry (All Five Flavors Combo)</p>
+        <div class="price-row">
+            <span class="price">KSh 1480</span>
+            <button onclick="addToCart('Fruits Fun 80ml Flavored Lubricant', 1480, '../images/lubes/Fruits Fun 80ml Flavored Lubricant.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/lubes/Sex Toy Anti-bacterial Cleaning Liquid.jpg">
+    <div class="p-4">
+        <h4>Sex Toy Anti-bacterial Cleaning Liquid</h4>
+        <p class="desc">Swiss Navy Premium Toy & Body Spray Cleaner - 6 oz - Body-Safe, Gentle, Dermatologically Tested Cleanser for Toys & Intimate Areas - Safe for Silicone, Rubber & Latex Toys - Lavender Scent</p>
+        <div class="price-row">
+            <span class="price">KSh 1160</span>
+            <button onclick="addToCart('Sex Toy Anti-bacterial Cleaning Liquid', 1160, '../images/lubes/Sex Toy Anti-bacterial Cleaning Liquid.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/lubes/XESSO Water Based Creamy Lube.jpg">
+    <div class="p-4">
+        <h4>XESSO Water Based Creamy Lube</h4>
+        <p class="desc">XESSO Water Based Creamy Lube, Zesty Strawberry Flavored 8.3 Fl Oz, Thick White Gel-Like Slippery Glide Without Parabens, pH-Balanced, Sugar-Free for Women, Men & Couples. Discreet Packaging</p>
+        <div class="price-row">
+            <span class="price">KSh 1430</span>
+            <button onclick="addToCart('XESSO Water Based Creamy Lube', 1430, '../images/lubes/XESSO Water Based Creamy Lube.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/lubes/LubeLife Water-Based Lube.jpg">
+    <div class="p-4">
+        <h4>LubeLife Water-Based Lube</h4>
+        <p class="desc">LubeLife Water-Based Lube – Personal Lubricant for Men, Women & Couples, Travel Size, Non-Staining, Easy Clean-Up, Toy-Safe, 12 Fl Oz</p>
+        <div class="price-row">
+            <span class="price">KSh 1240</span>
+            <button onclick="addToCart('LubeLife Water-Based Lube', 1240, '../images/lubes/LubeLife Water-Based Lube.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/lubes/Aloe Cadabra Natural Water Based Lubricant.jpg">
+    <div class="p-4">
+        <h4>Aloe Cadabra Natural Water Based Lubricant</h4>
+        <p class="desc">Aloe Cadabra Natural Water Based Personal Lubricant and Vaginal Moisturizer, Organic Aloe Lube for Men, Women and Couples, Non-Staining, pH Balanced (Unscented 2.5 Ounces, 1 Pack)</p>
+        <div class="price-row">
+            <span class="price">KSh 1067</span>
+            <button onclick="addToCart('Aloe Cadabra Natural Water Based Lubricant', 1067, '../images/lubes/Aloe Cadabra Natural Water Based Lubricant.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/lubes/Astroglide Strawberry Flavored Lubricant.jpg">
+    <div class="p-4">
+        <h4>Astroglide Strawberry Flavored Lubricant</h4>
+        <p class="desc">Astroglide Strawberry Flavored Personal Lubricant (8.5oz), Lube for Men, Women and Couples, Delicious Flavor, Hypoallergenic, Vaginal Safe, Condom Compatible</p>
+        <div class="price-row">
+            <span class="price">KSh 1325</span>
+            <button onclick="addToCart('Astroglide Strawberry Flavored Lubricant', 1325, '../images/lubes/Astroglide Strawberry Flavored Lubricant.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/lubes/Sexual Enhancement Erection Cream.jpg">
+    <div class="p-4">
+        <h4>Sexual Enhancement Erection Cream</h4>
+        <p class="desc">Men Massage Oil for Sex -Sexual Enhancement Erection Cream Penisgrowth Oil Longer Thicker Penis Energy Massage Essential Oil Sex Men Energy for Care Delay Performance Boost Strength</p>
+        <div class="price-row">
+            <span class="price">KSh 1445</span>
+            <button onclick="addToCart('Sexual Enhancement Erection Cream', 1445, '../images/lubes/Sexual Enhancement Erection Cream.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white/70 py-12 text-center text-sm">
+    © 2026 Lumina Intimates Kenya
+</footer>
+
+<script src="../js/x.js"></script>
+
+</body>
+</html>

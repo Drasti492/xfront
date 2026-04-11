@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Vibrators | Lumina Intimates</title>
+
+    <link rel="stylesheet" href="../css/x.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-[#fff0f5] text-gray-800">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-pink-600 rounded-2xl flex items-center justify-center">
+                <span class="text-white font-bold">LI</span>
+            </div>
+            <span class="text-2xl font-semibold text-pink-600">Lumina</span>
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="../index.html">Home</a>
+            <a href="her.html">For Her</a>
+            <a href="him.html">For Him</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-6">
+
+            <!-- CART -->
+            <button onclick="window.location.href='cart.html'" class="flex items-center gap-2">
+                <i class="fa fa-shopping-cart text-xl"></i>
+                <span id="cart-count" class="text-pink-600 font-semibold text-sm">0</span>
+            </button>
+
+            <!-- HAMBURGER -->
+            <button id="hamburger" class="md:hidden text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<section class="py-14 bg-white text-center px-6">
+    <h1 class="text-3xl md:text-5xl font-semibold">Rose Vibrators</h1>
+    <p class="text-gray-500 mt-3 max-w-xl mx-auto text-sm md:text-base">
+        Vibrators in Nairobi come in all shapes and sizes. Find long-lasting and powerful vibrators at Lumina Intimates.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="py-10 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+<!-- PRODUCT 1 -->
+<div class="product-card">
+    <img src="../images/vibrators/The Original Rose Vibrator.jpg">
+    <div class="p-4">
+        <h4>The Original Rose Vibrator</h4>
+        <p class="desc">Rose Toy Women Sex Toys - BIG SHOCKED Adult Toys for Women Rose Sex Toy Clit Sucker Sucking Vibrator with 10 Suction Modes Vibrater Dildo Anal Couples Female Adult Toy Dildos Vibrators Jewelry</p>
+        <div class="price-row">
+            <span class="price">KSh 3383</span>
+            <button onclick="addToCart('The Original Rose Vibrator', 3383, '../images/vibrators/The Original Rose Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="product-card">
+    <img src="../images/vibrators/10 Speed Bullet Vibrator.jpg">
+    <div class="p-4">
+        <h4>10 Speed Bullet Vibrator</h4>
+        <p class="desc">Handheld Personal Mini Massager Tool– Waterproof, USB Rechargeable, 10 Vibration - Perfect on Back Legs Hand Pains and Sports Recovery(Black)</p>
+        <div class="price-row">
+            <span class="price">KSh 2590</span>
+            <button onclick="addToCart('10 Speed Bullet Vibrator', 2590, '../images/vibrators/10 Speed Bullet Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="product-card">
+    <img src="../images/vibrators/Adult Sex Toy Rabbit Vibrator.jpg">
+    <div class="p-4">
+        <h4>Adult Sex Toy Rabbit Vibrator</h4>
+        <p class="desc">Adult Sex Toy Rabbit Vibrator – Dildo Sex Toys for Women with 10 Vibrating 7 Thrusting Dildos & 5 Pulsing Modes, G Spot Clitoral Vibrators for Female Pleasure and Couples Sex Swing Games AI Sync</p>
+        <div class="price-row">
+            <span class="price">KSh 3055</span>
+            <button onclick="addToCart('Adult Sex Toy Rabbit Vibrator', 3055, '../images/vibrators/Adult Sex Toy Rabbit Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="product-card">
+    <img src="../images/vibrators/Clitoral Stimulator vibrator.jpg">
+    <div class="p-4">
+        <h4>Clitoral Stimulator vibrator</h4>
+        <p class="desc">Quinn Wellness Adult Sex Toy Groove - Dual-Sided Heating Vibrator Wand - 12 Modes & 5 Speeds on Head & Tail - G-Spot & Clitoral Stimulator for Women - Rechargeable Waterproof Sexual Massager - Green</p>
+        <div class="price-row">
+            <span class="price">KSh 3440</span>
+            <button onclick="addToCart('Clitoral Stimulator vibrator', 3440, '../images/vibrators/Clitoral Stimulator vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 5 -->
+<div class="product-card">
+    <img src="../images/vibrators/Mini Vibrator Clitoral Stimulator.jpg">
+    <div class="p-4">
+        <h4>Mini Vibrator Clitoral Stimulator</h4>
+        <p class="desc">Vibrator Wand Sex Toys Women, Mini Vibrator Clitoral Stimulator with 10 Vibration Modes, Adult Toys for Women Vibrating Wand Massager, Vibrators Waterproof Female Sex Toys Adult Sex Toys & Games</p>
+        <div class="price-row">
+            <span class="price">KSh 2883</span>
+            <button onclick="addToCart('Mini Vibrator Clitoral Stimulator', 2883, '../images/vibrators/Mini Vibrator Clitoral Stimulator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="product-card">
+    <img src="../images/vibrators/Powerful Frequency Wand Vibrator.jpg">
+    <div class="p-4">
+        <h4>Powerful Frequency Wand Vibrator</h4>
+        <p class="desc">CHARMING Wired Powerful Handheld Back Massager with 10 Speeds Strong Vibration Wand, Personal Therapy Massager for Sports Recovery, Muscle Aches, Body Pain-Light Purple</p>
+        <div class="price-row">
+            <span class="price">KSh 3350</span>
+            <button onclick="addToCart('Powerful Frequency Wand Vibrator', 3350, '../images/vibrators/Powerful Frequency Wand Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 7 -->
+<div class="product-card">
+    <img src="../images/vibrators/2 in 1 Rose Vibrator.jpg">
+    <div class="p-4">
+        <h4>Powerful 2 in 1 Rose Licking Vibrator</h4>
+        <p class="desc">Vibrator Dildo Sex Toys for Women - MOOLIGIRL Rose Sex Toy with Thrusting G Spot Vibrators & 10 Sucking Modes for Clitoral Nipple Stimulation Anal Double-Ended Dildos Adult Sex Toys Games for Couples</p>
+        <div class="price-row">
+            <span class="price">KSh 3920</span>
+            <button onclick="addToCart('2 in 1 Rose Vibrator', 3920, '../images/vibrators/2 in 1 Rose Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 8 -->
+<div class="product-card">
+    <img src="../images/vibrators/Lumina Vibrating Rotating Dildo.jpg">
+    <div class="p-4">
+        <h4>Lumina Vibrating Rotating Dildo</h4>
+        <p class="desc">Realistic Thrusting Dildo Vibrator Sex Toys, Suction Cup Dildo Couples Sex Toys for Women with 5 Thrusting Rotating & 9 Vibrating & Heating Mode, Female Adult Sex Toy for G-Spot with Remote Control</p>
+        <div class="price-row">
+            <span class="price">KSh 3477</span>
+            <button onclick="addToCart('Lumina Vibrating Rotating Dildo', 3477, '../images/vibrators/Lumina Vibrating Rotating Dildo.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 9 -->
+<div class="product-card">
+    <img src="../images/vibrators/Realistic Thrusting Dildo Vibrator Sex.jpg">
+    <div class="p-4">
+        <h4>Realistic Thrusting Dildo Vibrator Sex</h4>
+        <p class="desc">Realistic Thrusting Dildo Vibrator Sex Toys, Suction Cup Dildo Couples Sex Toys for Women with 5 Thrusting Rotating & 9 Vibrating & Heating Mode, Female Adult Sex Toy for G-Spot with Remote Control</p>
+        <div class="price-row">
+            <span class="price">KSh 2990</span>
+            <button onclick="addToCart('Realistic Thrusting Dildo Vibrator Sex', 2990, '../images/vibrators/Realistic Thrusting Dildo Vibrator Sex.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 10 -->
+<div class="product-card">
+    <img src="../images/vibrators/Personal Vibrating Handheld Massager.webp">
+    <div class="p-4">
+        <h4>Personal Vibrating Handheld Massager</h4>
+        <p class="desc">Personal Vibrating Handheld Massager-Cordless Rechargeable Electric Mini Hand Held Portable Seven Massage Wand for Full Body</p>
+        <div class="price-row">
+            <span class="price">KSh 2580</span>
+            <button onclick="addToCart('Personal Vibrating Handheld Massager', 2580, '../images/vibrators/Personal Vibrating Handheld Massager.webp')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 11 -->
+<div class="product-card">
+    <img src="../images/vibrators/Tornado G Spot Rabbit Vibrator.jpg">
+    <div class="p-4">
+        <h4>Tornado G Spot Rabbit Vibrator</h4>
+        <p class="desc">Tornado G Spot Rabbit Vibrator Black Combination of 360° Swirl+Up-Down Thrust| 5 Tornado Swirling Modes|A Storm of Satisfaction for G Spot that Put Basic Vibes to Shame</p>
+        <div class="price-row">
+            <span class="price">KSh 4250</span>
+            <button onclick="addToCart('Tornado G Spot Rabbit Vibrator', 4250, '../images/vibrators/Tornado G Spot Rabbit Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 12 -->
+<div class="product-card">
+    <img src="../images/vibrators/Nipple Clit Sucker.jpg">
+    <div class="p-4">
+        <h4>Lumina Nipple Clit Sucker</h4>
+        <p class="desc">Nipple Suckers Set (1 Pcs 0.78\" + 2 Pcs 1.5\"), Twist Nipple Suction Cups and Clit Sucker for Enhanced Sensitivity in Couples Bedroom Play, Nipple Suckers for Pressure for Women Men Nipple Play</p>
+        <div class="price-row">
+            <span class="price">KSh 2360</span>
+            <button onclick="addToCart('Lumina Nipple Clit Sucker', 2360, '../images/vibrators/Nipple Clit Sucker.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 13 -->
+<div class="product-card">
+    <img src="../images/vibrators/Clitoral Tongue Licking Toy.webp">
+    <div class="p-4">
+        <h4>Clitoral Tongue Licking Toy</h4>
+        <p class="desc">Rose Toy Vibrator for Women, Clitoral Tongue Licking Toy Mini Small Vibrators with 9 Modes & 9 Powerful Vibration, Waterproof Adult Sex Toys for Couples</p>
+        <div class="price-row">
+            <span class="price">KSh 2410</span>
+            <button onclick="addToCart('Clitoral Tongue Licking Toy', 2410, '../images/vibrators/Clitoral Tongue Licking Toy.webp')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 14 -->
+<div class="product-card">
+    <img src="../images/vibrators/Dolphin G-spot Vibrator.jpg">
+    <div class="p-4">
+        <h4>Dolphin G-spot Vibrator</h4>
+        <p class="desc">Mini Vibrator Womens Jumping Dolphin Egg Bullet</p>
+        <div class="price-row">
+            <span class="price">KSh 2960</span>
+            <button onclick="addToCart('Dolphin G-spot Vibrator', 2960, '../images/vibrators/Dolphin G-spot Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 15 -->
+<div class="product-card">
+    <img src="../images/vibrators/Mary Sucking Wearable Vibrator.jpg">
+    <div class="p-4">
+        <h4>Mary Sucking Wearable Vibrator</h4>
+        <p class="desc">MOOLIGIRL Sucking Vibrator Women Sex Toys - AI Sync Flapping G Spot Vibrator Dildo with 7 Suction & Vibration Modes for Clitoral Nipple Anal Stimulation, App Control Couples Thrusting Adult Sex Toy</p>
+        <div class="price-row">
+            <span class="price">KSh 3200</span>
+            <button onclick="addToCart('Mary Sucking Wearable Vibrator', 3200, '../images/vibrators/Mary Sucking Wearable Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 16 -->
+<div class="product-card">
+    <img src="../images/vibrators/Tracy's Dog Powerful G Spot Vibrator.jpg">
+    <div class="p-4">
+        <h4>Tracy Dog Powerful G Spot Vibrator</h4>
+        <p class="desc">Tracy's Dog Powerful G Spot Vibrator for Deep Penetration, Adult Sex Toys for Women and Couples, Realistic Full Silicone Soft Vibrating Dildo Massager for Clitoral and Anal Stimulation</p>
+        <div class="price-row">
+            <span class="price">KSh 3360</span>
+            <button onclick="addToCart('Tracy Dog Powerful G Spot Vibrator', 3360, '../images/vibrators/Tracy\'s Dog Powerful G Spot Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 17 -->
+<div class="product-card">
+    <img src="../images/vibrators/Finger Shaped Vibrator.jpg">
+    <div class="p-4">
+        <h4>Finger Shaped Vibrator</h4>
+        <p class="desc">SVAKOM COCO Vibrator Dildo Sex Toys Finger Shaped - 8 Seconds to Climax Waterproof Vibes for Women - 5*5 Vibrations G Spot Clit Nipple Anal Personal Massagers Adult Toys</p>
+        <div class="price-row">
+            <span class="price">KSh 3060</span>
+            <button onclick="addToCart('Finger Shaped Vibrator', 3060, '../images/vibrators/Finger Shaped Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 18 -->
+<div class="product-card">
+    <img src="../images/vibrators/Clitoral and G-spot Stimulation.jpg">
+    <div class="p-4">
+        <h4>Clitoral and G-spot Stimulation Vibrator</h4>
+        <p class="desc">7.6 Inch Realistic Dildo Vibrator for Women，10 Powerful Vibration Modes for Clitoral and G-spot Stimulation, Waterproof Rose Adult Sex Toys for Women and Couples</p>
+        <div class="price-row">
+            <span class="price">KSh 3060</span>
+            <button onclick="addToCart('Clitoral and G-spot Stimulation Vibrator', 3060, '../images/vibrators/Clitoral and G-spot Stimulation.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<!-- PRODUCT 19 -->
+<div class="product-card">
+    <img src="../images/vibrators/Tracy Dog Wearable Clitoral G Spot Vibrator.jpg">
+    <div class="p-4">
+        <h4>Tracy Dog Wearable Clitoral G Spot Vibrator</h4>
+        <p class="desc">Tracy's Dog Wearable Clitoral G Spot Vibrator, Remote Control Adult Sex Toys for Women Couple, Powerful Quiet Panty Vibrators, Flexible Vibrating Adult Toy Stimulator with 10 Vibration</p>
+        <div class="price-row">
+            <span class="price">KSh 3150</span>
+            <button onclick="addToCart('Tracy Dog Wearable Clitoral G Spot Vibrator', 3150, '../images/vibrators/Tracy Dog Wearable Clitoral G Spot Vibrator.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white/70 py-12 text-center text-sm">
+    © 2026 Lumina Intimates Kenya
+</footer>
+
+<script src="../js/x.js"></script>
+
+</body>
+</html>

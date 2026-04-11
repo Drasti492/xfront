@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Male Toys | Lumina Intimates</title>
+
+    <link rel="stylesheet" href="../css/x.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-[#fff0f5] text-gray-800">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-pink-600 rounded-2xl flex items-center justify-center">
+                <span class="text-white font-bold">LI</span>
+            </div>
+            <span class="text-2xl font-semibold text-pink-600">Lumina</span>
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <div class="hidden md:flex gap-8 font-medium">
+            <a href="../index.html">Home</a>
+            <a href="her.html">For Her</a>
+            <a href="him.html">For Him</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-6">
+
+            <!-- CART -->
+            <button onclick="window.location.href='cart.html'" class="flex items-center gap-2">
+                <i class="fa fa-shopping-cart text-xl"></i>
+                <span id="cart-count" class="text-pink-600 font-semibold text-sm">0</span>
+            </button>
+
+            <!-- HAMBURGER -->
+            <button id="hamburger" class="md:hidden text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<section class="py-14 bg-white text-center px-6">
+    <h1 class="text-3xl md:text-5xl font-semibold">Male Toys</h1>
+    <p class="text-gray-500 mt-3 max-w-xl mx-auto text-sm md:text-base">
+        Despite the scarcity of male sex toys, Lumina Intimates brings you cock rings, anal plugs, fleshlights and penis extenders.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="py-10 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+<div class="product-card">
+    <img src="../images/male toys/Simple Pocket Pussy Male Masturbation Toy.jpg">
+    <div class="p-4">
+        <h4>Simple Pocket Pussy Male Masturbation Toy</h4>
+        <p class="desc">Realistic Pocket Pussy Male Masturbator, Thick Labia Pussy Masturbators Sex Toy with 5D Deep Vagina and Tight Anus, Lifelike Blowjob Male Stroker Adult Sex Toys for Men Masturbation (Brown)</p>
+        <div class="price-row">
+            <span class="price">KSh 4940</span>
+            <button onclick="addToCart('Simple Pocket Pussy Male Masturbation Toy', 4940, '../images/male toys/Simple Pocket Pussy Male Masturbation Toy.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/male toys/lumina Pocket Pussy Vibrating Fleshlight.jpg">
+    <div class="p-4">
+        <h4>Lumina Pocket Pussy Vibrating Fleshlight</h4>
+        <p class="desc">Male Sex Toys Vibrating Masturbator,Male Masturbator Automatic Pocket Pussy with LCD Display & Lifelike Vagina Powerful 9 Vibration & 5 Suction Modes, Mens Vibrator for Sex Blowjob Pleasure</p>
+        <div class="price-row">
+            <span class="price">KSh 3790</span>
+            <button onclick="addToCart('Lumina Pocket Pussy Vibrating Fleshlight', 3790, '../images/male toys/lumina Pocket Pussy Vibrating Fleshlight.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/male toys/lumina 10 Speed Prostate Massager.jpg">
+    <div class="p-4">
+        <h4>Lumina 10 Speed Prostate Massager</h4>
+        <p class="desc">Prostate Massager Anal Vibrator, Sex Toys for Men P Spot Vibrator Dildos with 3 Wiggling 3 Throbbing 10 Vibrating Modes, Butt Plug Stimulator for Men Couples (Bumpa)</p>
+        <div class="price-row">
+            <span class="price">KSh 2200</span>
+            <button onclick="addToCart('Lumina 10 Speed Prostate Massager', 2200, '../images/male toys/lumina 10 Speed Prostate Massager.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/male toys/3 in 1 Male Masturbation Toy.jpg">
+    <div class="p-4">
+        <h4>3 in 1 Male Masturbation Toy</h4>
+        <p class="desc">dult Sex Toys for Men Penis Stimulation,Male Blowjob Stroker Toy with 3D Realistic Textured Tight Anus & Real Mouth for Man Masturbation Pleasure (Tan)</p>
+        <div class="price-row">
+            <span class="price">KSh 2930</span>
+            <button onclick="addToCart('3 in 1 Male Masturbation Toy', 2930, '../images/male toys/3 in 1 Male Masturbation Toy.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/male toys/Delay Cock Ring with Vibration.jpg">
+    <div class="p-4">
+        <h4>Delay Cock Ring with Vibration</h4>
+        <p class="desc">Tapping Vibrating Male Masturbator with Bend-to-Fit Testicle Vibrator, Hands Free Penis Vibrator Stroker Trainer with Cock Ring, Adult Sex Toys for Men, Mens Vibrating Blowjob Sex Machine Masturbation</p>
+        <div class="price-row">
+            <span class="price">KSh 3120</span>
+            <button onclick="addToCart('Delay Cock Ring with Vibration', 3120, '../images/male toys/Delay Cock Ring with Vibration.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/male toys/Penis Extender Sleeve.jpg">
+    <div class="p-4">
+        <h4>Penis Extender Sleeve</h4>
+        <p class="desc">Male Sex Toys Penis Extender Silicone Cock Sleeve, Adult Toy Reusable Realistic Penis Enlarger Rings Thicken, Delay Ejaculation Stronger Erection for Mens Couples</p>
+        <div class="price-row">
+            <span class="price">KSh 2415</span>
+            <button onclick="addToCart('Penis Extender Sleeve', 2415, '../images/male toys/Penis Extender Sleeve.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/male toys/Penis Vibrator with APP Control.jpg">
+    <div class="p-4">
+        <h4>Penis Vibrator with APP Control</h4>
+        <p class="desc">Male Sex Toys for Men - Male Masturbator Penis Training Vibrator with APP Control</p>
+        <div class="price-row">
+            <span class="price">KSh 2599</span>
+            <button onclick="addToCart('Penis Vibrator with APP Control', 2599, '../images/male toys/Penis Vibrator with APP Control.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/male toys/Realistic Male Masturbator Cup.jpg">
+    <div class="p-4">
+        <h4>Realistic Male Masturbator Cup</h4>
+        <p class="desc">Male Masturbator Cup, Quiet Adult Sex Toys for Men Realistic Pocket Pussy Vagina Textured with 7.5in Depth Soft and Manual Sex Machine</p>
+        <div class="price-row">
+            <span class="price">KSh 2380</span>
+            <button onclick="addToCart('Realistic Male Masturbator Cup', 2380, '../images/male toys/Realistic Male Masturbator Cup.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/male toys/Vibrating Cock Ring Double Motor.jpg">
+    <div class="p-4">
+        <h4>Vibrating Cock Ring Double Motor</h4>
+        <p class="desc">Vibrating Cock Ring Taint Stimulator, Silicone Pleasure Penis Ring Vibrator Couples Adult Sex Toys for Men, Dual Motors 9 Vibrations Remote Control Male Couple Sex Toy, Cock Rings Vibrators for Men</p>
+        <div class="price-row">
+            <span class="price">KSh 1415</span>
+            <button onclick="addToCart('Vibrating Cock Ring Double Motor', 1415, '../images/male toys/Vibrating Cock Ring Double Motor.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div class="product-card">
+    <img src="../images/male toys/Penis Pump with Gauge.jpg">
+    <div class="p-4">
+        <h4>Penis Pump with Gauge</h4>
+        <p class="desc">Male Enhancement Pump System,with Gauge 9 x 1.75 inch Cylinder,Sex Toys - Pumps & Enlargers,Penis Male Sex Toys</p>
+        <div class="price-row">
+            <span class="price">KSh 2550</span>
+            <button onclick="addToCart('Penis Pump with Gauge', 2550, '../images/male toys/Penis Pump with Gauge.jpg')">ADD</button>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white/70 py-12 text-center text-sm">
+    © 2026 Lumina Intimates Kenya
+</footer>
+
+<script src="../js/x.js"></script>
+
+</body>
+</html>

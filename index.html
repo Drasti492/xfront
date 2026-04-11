@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Intimates | Premium Pleasure in Kenya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/x.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-[#fff0f5] text-gray-800 overflow-x-hidden">
+
+  <!-- AGE GATE -->
+<div id="age-gate" class="fixed inset-0 bg-black/80 flex items-center justify-center z-[9999]">
+    <div class="bg-white rounded-3xl max-w-md w-full mx-6 p-10 shadow-2xl text-center">
+
+        <div class="w-20 h-20 bg-pink-600 rounded-3xl mx-auto flex items-center justify-center mb-6">
+            <span class="text-white text-5xl font-bold">LI</span>
+        </div>
+
+        <h1 class="text-4xl font-semibold text-pink-600">Lumina Intimates</h1>
+        <p class="text-gray-600 mt-2">Kenya's Premier Adult Wellness Store</p>
+
+        <div class="mt-10">
+            <p class="text-lg font-medium mb-4">You must be 18 years or older to enter</p>
+
+            <!-- CHECKBOX -->
+            <label class="flex items-center justify-center gap-4 cursor-pointer">
+                <input type="checkbox" id="age-check" class="w-6 h-6 accent-pink-600">
+                <span class="text-lg text-gray-700">I confirm that I am 18+ years old</span>
+            </label>
+
+            <!-- EXTRA DISCLAIMER -->
+            <p class="text-xs text-gray-500 mt-6 leading-relaxed">
+                By entering this site, you agree that you are of legal age to view adult content.
+                All products are intended for personal use only. We promote safe, consensual, and responsible use.
+            </p>
+        </div>
+
+        <!-- BUTTON -->
+        <button id="continue-btn" disabled
+            class="mt-10 w-full bg-pink-600 hover:bg-pink-700 disabled:bg-gray-300 text-white font-semibold py-5 rounded-3xl text-lg transition-all">
+            ENTER THE STORE
+        </button>
+
+    </div>
+</div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="bg-white border-b border-pink-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 bg-pink-600 rounded-3xl flex items-center justify-center">
+                    <span class="text-white text-3xl font-bold tracking-tighter">LI</span>
+                </div>
+                <span class="text-3xl font-semibold text-pink-600 tracking-tighter">Lumina</span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-x-9 text-base font-medium">
+                <a href="#categories" class="hover:text-pink-600">Categories</a>
+                <a href="#featured" class="hover:text-pink-600">Shop</a>
+                <a href="#why" class="hover:text-pink-600">Why Us</a>
+                <a href="./pages/her.html" class="hover:text-pink-600">For Her</a>
+                <a href="./pages/him.html" class="hover:text-pink-600">For Him</a>
+            </div>
+
+            <div class="flex items-center gap-x-8">
+                <button onclick="window.location.href='./pages/cart.html'" class="flex items-center gap-x-2 text-gray-700 hover:text-pink-600">
+                    <i class="fas fa-shopping-bag text-2xl"></i>
+                    <span id="cart-count" class="font-semibold text-pink-600">0</span>
+                </button>
+                <button id="hamburger" class="md:hidden text-3xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- GLOBAL CATEGORY BAR (added by JS) -->
+    <!-- This will appear below navbar on all pages -->
+
+    <!-- HERO SLIDESHOW -->
+    <section class="relative h-screen overflow-hidden" id="hero">
+        <div id="slider" class="absolute inset-0"></div>
+        
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
+        
+        <div class="absolute inset-0 flex items-center justify-center text-center text-white px-6 z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-7xl font-semibold tracking-tighter leading-none mb-6">
+                    Pleasure,<br>Delivered Discreetly
+                </h1>
+                <p class="text-2xl mb-10 max-w-lg mx-auto">Premium adult toys & wellness products in Kenya. Fast. Private. Trusted.</p>
+                <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                    <button onclick="selectCategory('her')" 
+                            class="bg-pink-600 hover:bg-pink-700 px-14 py-6 rounded-3xl text-2xl font-semibold transition-all">Shop For Her</button>
+                    <button onclick="selectCategory('him')" 
+                            class="border-2 border-white hover:bg-white/10 px-14 py-6 rounded-3xl text-2xl font-semibold transition-all">Shop For Him</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section id="categories" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-center mb-4">Our Collections</h2>
+            <p class="text-center text-gray-500 mb-12">Everything you need for intimate pleasure</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                
+                <a href="./pages/dildos.html" class="text-center p-8 hover:bg-pink-100 bg-pink-50 rounded-3xl transition-all">Dildos</a>
+                <a href="./pages/maletoys.html" class="text-center p-8 hover:bg-pink-100 bg-pink-50 rounded-3xl transition-all">Male Toys</a>
+                <a href="./pages/analplugs.html" class="text-center p-8 hover:bg-pink-100 bg-pink-50 rounded-3xl transition-all">Anal Plugs & Toys</a>
+                <a href="./pages/bdsm.html" class="text-center p-8 hover:bg-pink-100 bg-pink-50 rounded-3xl transition-all">BDSM & Kegel</a>
+                <a href="./pages/lubesandcondoms.html" class="text-center p-8 hover:bg-pink-100 bg-pink-50 rounded-3xl transition-all">Lubes & Condoms</a>
+                <a href="./pages/adultgames.html" class="text-center p-8 hover:bg-pink-100 bg-pink-50 rounded-3xl transition-all">Adult Games</a>
+                <a href="./pages/rosevibrators.html" class="text-center p-8 hover:bg-pink-100 bg-pink-50 rounded-3xl transition-all">Rose Vibrators</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why" class="py-20 bg-[#fff0f5]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-center mb-12">Why Choose Lumina Intimates?</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="text-6xl mb-6">🚚</div>
+                    <h3 class="font-semibold text-2xl">Fast Delivery</h3>
+                    <p class="mt-3 text-gray-600">2 hours in Nairobi • 24 hours countrywide</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl mb-6">📦</div>
+                    <h3 class="font-semibold text-2xl">Discreet Packaging</h3>
+                    <p class="mt-3 text-gray-600">Plain brown sealed bags. Total privacy guaranteed.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl mb-6">❤️</div>
+                    <h3 class="font-semibold text-2xl">Amazing Support</h3>
+                    <p class="mt-3 text-gray-600">Free friendly advice on choosing the perfect toy for you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section id="featured" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-semibold text-center mb-4">Featured Products</h2>
+            <p class="text-center text-gray-500 mb-12">Best sellers in Kenya right now</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="product-grid">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white/70 py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center mb-8">
+                <div class="flex items-center gap-x-3 text-white">
+                    <div class="w-10 h-10 bg-pink-600 rounded-3xl flex items-center justify-center">
+                        <span class="text-3xl font-bold">LI</span>
+                    </div>
+                    <span class="text-3xl font-semibold tracking-tighter">Lumina</span>
+                </div>
+            </div>
+            <p class="text-sm max-w-md mx-auto">Premium adult toys delivered discreetly across Kenya. Fast • Private • Trusted.</p>
+            <div class="mt-12 text-sm">
+                Call / WhatsApp: <strong class="text-pink-400">07</strong><br>
+                Monday–Saturday 9:00am – 8:00pm | Sunday 10:00am – 6:00pm
+            </div>
+            <div class="mt-16 text-xs border-t border-white/10 pt-8">
+                © 2026 Lumina Intimates Kenya. You must be 18+ to shop.
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/x.js"></script>
+</body>
+</html>
