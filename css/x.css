@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* ================= ROOT ================= */
+/* = ROOT = */
 :root {
     --pink: #ec4899;
     --pink-dark: #db2777;
@@ -9,7 +9,7 @@
     --black: #111827;
 }
 
-/* ================= RESET ================= */
+/* =RESET = */
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body {
     color: #1f2937;
 }
 
-/* ================= NAVBAR ================= */
+/* =NAVBAR = */
 #navbar {
     position: sticky;
     top: 0;
@@ -30,7 +30,7 @@ body {
     background: white;
 }
 
-/* ================= CATEGORY BAR ================= */
+/* = CATEGORY BAR = */
 .category-bar {
     background: white;
     border-bottom: 1px solid var(--pink-light);
