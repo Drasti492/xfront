@@ -75,14 +75,18 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--pink-light);
+    border: 3px solid var(--pink-light);
     transition: all 0.3s ease;
     height: 100%;
+
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
 .product-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 12px 30px rgba(236, 72, 153, 0.15);
 }
 
 .product-card img {
