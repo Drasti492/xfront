@@ -1,5 +1,3 @@
-// js/cart.js
-
 function renderCart() {
     const container = document.getElementById('cart-items');
     if (!container) return;

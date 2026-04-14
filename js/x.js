@@ -1,4 +1,4 @@
-// ================= CART =================
+//  CART 
 let cart = JSON.parse(localStorage.getItem('luminaCart')) || [];
 
 function updateCartCount() {
@@ -31,7 +31,7 @@ function addToCart(name, price, image) {
 
 function createCategoryBar() {
 
-    // Detect current location
+    // Detect  location
     const isInPages = window.location.pathname.includes('/pages/');
     const base = isInPages ? './' : './pages/';
 
@@ -63,7 +63,7 @@ function createCategoryBar() {
 
 
 
-// ================= HAMBURGER =================
+// HAMBURGER 
 const hamburger = document.getElementById('hamburger');
 
 if (hamburger) {
@@ -89,15 +89,15 @@ if (hamburger) {
     });
 }
 
-// ================= INIT =================
+// INIT 
 window.addEventListener('load', () => {
     updateCartCount();
     createCategoryBar();
     initAgeGate(); 
-    initSearch(); // 👈 ADD THIS
+    initSearch(); 
 });``
 
-// ================= AGE GATE =================
+//  AGE GATE 
 function initAgeGate() {
     const gate = document.getElementById("age-gate");
     const checkbox = document.getElementById("age-check");
@@ -105,7 +105,7 @@ function initAgeGate() {
 
     if (!gate) return;
 
-    // Check if already verified
+    // if already verified
     const verified = localStorage.getItem("luminaAgeVerified");
 
     if (verified === "true") {
@@ -113,7 +113,7 @@ function initAgeGate() {
         return;
     }
 
-    // Enable button when checked
+    //  button Enable when checked
     checkbox.addEventListener("change", () => {
         button.disabled = !checkbox.checked;
     });
@@ -129,7 +129,7 @@ function initAgeGate() {
     });
 }
 
-// ================= SEARCH TOGGLE =================
+// SEARCH TOGGLE 
 function initSearch() {
     const toggle = document.getElementById('search-toggle');
     const bar = document.getElementById('search-bar');

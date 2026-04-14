@@ -111,7 +111,7 @@ function submitOrder() {
 
     showModal(document.querySelector(".loading-state"));
 
-    // STEP 1: INITIATE PAYMENT
+    // INITIATE PAYMENT
     fetch("https://xback-hrom.onrender.com/api/payment/stk-push", {
         method: "POST",
         headers: {
@@ -140,7 +140,7 @@ function submitOrder() {
 
                         showModal(document.querySelector(".success-state"));
 
-                        // SAVE ORDER AFTER PAYMENT SUCCESS
+                        // SAVE ORDE AFTER PAYMEt SUCCESS
                         saveOrder();
 
                     } else if (statusData.status === "failed" || attempts > 30) {
