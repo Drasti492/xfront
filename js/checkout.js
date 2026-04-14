@@ -1,24 +1,103 @@
-        // Kenya Counties and Towns 
-        const countiesData = {
-            "Nairobi": ["Nairobi CBD", "Westlands", "Kilimani", "Lavington", "South C", "Eastleigh", "Kasarani", "Langata", "Embakasi", "Ruaraka"],
-            "Kiambu": ["Thika", "Ruiru", "Kiambu Town", "Limuru", "Kikuyu", "Githunguri", "Karuri", "Juja"],
-            "Nakuru": ["Nakuru Town", "Naivasha", "Gilgil", "Njoro", "Molo", "Subukia"],
-            "Kisumu": ["Kisumu CBD", "Kondele", "Nyakach", "Maseno", "Ahero"],
-            "Mombasa": ["Mombasa Island", "Nyali", "Likoni", "Bamburi", "Changamwe"],
-            "Uasin Gishu": ["Eldoret CBD", "Kitale", "Turbo", "Soy"],
-            "Nandi": ["Kapsabet", "Nandi Hills", "Tinderet", "Mosoriot", "Chemelil"],
-            "Kericho": ["Kericho Town", "Litein", "Kapkatet", "Kipkelion", "Sigowet"],
-            "Bomet": ["Bomet Town", "Sotik", "Longisa", "Chepalungu"],
-            "Kakamega": ["Kakamega Town", "Mumias", "Butere", "Shinyalu"],
-            "Bungoma": ["Bungoma Town", "Webuye", "Kimilili", "Chwele"],
-            "Busia": ["Busia Town", "Malaba", "Port Victoria"],
-            "Nyeri": ["Nyeri Town", "Nyahururu", "Othaya", "Karatina"],
-            "Meru": ["Meru Town", "Nkubu", "Maua", "Chuka"],
-            "Machakos": ["Machakos Town", "Mlolongo", "Athi River", "Kangundo"],
-            "Kajiado": ["Kajiado Town", "Ngong", "Kitengela", "Ongata Rongai"],
-            "Kilifi": ["Kilifi Town", "Malindi", "Watamu", "Mtwapa"],
-            "Kwale": ["Kwale Town", "Ukunda", "Diani"]
-        };
+
+const countiesData = {
+    "Nairobi": ["Nairobi CBD", "Westlands", "Kilimani", "Lavington", "South C", "Eastleigh", "Kasarani", "Langata", "Embakasi", "Ruaraka", "Dagoretti", "Karen"],
+    
+    "Kiambu": ["Thika", "Ruiru", "Kiambu Town", "Limuru", "Kikuyu", "Githunguri", "Karuri", "Juja", "Kabete", "Gatundu"],
+    
+    "Nakuru": ["Nakuru Town", "Naivasha", "Gilgil", "Njoro", "Molo", "Subukia", "Elementaita", "Kuresoi"],
+    
+    "Kisumu": ["Kisumu CBD", "Kondele", "Nyakach", "Maseno", "Ahero", "Muhoroni"],
+    
+    "Mombasa": ["Mombasa Island", "Nyali", "Likoni", "Bamburi", "Changamwe", "Jomvu", "Kisauni"],
+    
+    "Uasin Gishu": ["Eldoret CBD", "Kitale", "Turbo", "Soy", "Burnt Forest", "Moiben"],
+    
+    "Nandi": ["Kapsabet", "Nandi Hills", "Tinderet", "Mosoriot", "Chemelil", "Chesumei"],
+    
+    "Kericho": ["Kericho Town", "Litein", "Kapkatet", "Kipkelion", "Sigowet", "Londiani"],
+    
+    "Bomet": ["Bomet Town", "Sotik", "Longisa", "Chepalungu", "Konoin"],
+    
+    "Kakamega": ["Kakamega Town", "Mumias", "Butere", "Shinyalu", "Malava", "Lurambi"],
+    
+    "Bungoma": ["Bungoma Town", "Webuye", "Kimilili", "Chwele", "Sirisia", "Tongaren"],
+    
+    "Busia": ["Busia Town", "Malaba", "Port Victoria", "Budalangi", "Nambale"],
+    
+    "Nyeri": ["Nyeri Town", "Nyahururu", "Othaya", "Karatina", "Mukurweini"],
+    
+    "Meru": ["Meru Town", "Nkubu", "Maua", "Chuka", "Migori", "Timau"],
+    
+    "Machakos": ["Machakos Town", "Mlolongo", "Athi River", "Kangundo", "Matuu", "Tala"],
+    
+    "Kajiado": ["Kajiado Town", "Ngong", "Kitengela", "Ongata Rongai", "Kiserian", "Loitokitok"],
+    
+    "Kilifi": ["Kilifi Town", "Malindi", "Watamu", "Mtwapa", "Mariakani", "Kilifi North"],
+    
+    "Kwale": ["Kwale Town", "Ukunda", "Diani", "Msambweni", "Lunga Lunga"],
+
+    // === Remaining 29 Counties (Added with major towns / headquarters) ===
+
+    "Tana River": ["Hola", "Garsen", "Bura", "Madogo"],
+    
+    "Lamu": ["Lamu Town", "Mpeketoni", "Witu", "Kiunga"],
+    
+    "Taita Taveta": ["Voi", "Wundanyi", "Taveta", "Mwatate", "Maungu"],
+    
+    "Garissa": ["Garissa Town", "Dadaab", "Lagdera", "Hulugho"],
+    
+    "Wajir": ["Wajir Town", "Eldas", "Tarbaj", "Habaswein"],
+    
+    "Mandera": ["Mandera Town", "El Wak", "Rhamu", "Lafey"],
+    
+    "Marsabit": ["Marsabit Town", "Moyale", "Sololo", "Loiyangalani"],
+    
+    "Isiolo": ["Isiolo Town", "Garbatulla", "Merti", "Meru (border areas)"],
+    
+    "Tharaka Nithi": ["Chuka", "Kathwana", "Marimanti", "Kigumo"],
+    
+    "Embu": ["Embu Town", "Siakago", "Runyenjes", "Manyatta"],
+    
+    "Kitui": ["Kitui Town", "Mwingi", "Mutomo", "Zombe", "Mui"],
+    
+    "Makueni": ["Wote", "Makindu", "Mtito Andei", "Sultan Hamud", "Emali"],
+    
+    "Nyandarua": ["Ol Kalau", "Nyahururu", "Engineer", "Ndaragwa", "Kinangop"],
+    
+    "Kirinyaga": ["Kerugoya", "Kutus", "Wanguru", "Sagana"],
+    
+    "Murang'a": ["Murang'a Town", "Kangema", "Kahuro", "Kenol", "Maragua"],
+    
+    "Laikipia": ["Nanyuki", "Rumuruti", "Nyahururu", "Doldol", "Timau"],
+    
+    "Narok": ["Narok Town", "Kilgoris", "Mulot", "Sotik (border)", "Mau Narok"],
+    
+    "Kajiado": ["Kajiado Town", "Ngong", "Kitengela", "Ongata Rongai", "Kiserian", "Loitokitok"], // already had, kept consistent
+    
+    "Trans Nzoia": ["Kitale", "Endebess", "Kiminini", "Saboti"],
+    
+    "Elgeyo Marakwet": ["Iten", "Kapsowar", "Chepkorio", "Marakwet"],
+    
+    "West Pokot": ["Kapenguria", "Chepareria", "Sigor", "Alale"],
+    
+    "Samburu": ["Maralal", "Wamba", "Isiolo (border)", "Baragoi"],
+    
+    "Turkana": ["Lodwar", "Lokichar", "Kakuma", "Lokitaung", "Kalokol"],
+    
+    "Baringo": ["Kabarnet", "Marigat", "Kogelo", "Chemolingot", "Mogotio"],
+    
+    "Vihiga": ["Mbale", "Luanda", "Chavakali", "Emuhaya"],
+    
+    "Siaya": ["Siaya Town", "Bondo", "Ugunja", "Ukwala", "Yala"],
+    
+    "Homa Bay": ["Homa Bay Town", "Mbita", "Oyugis", "Kendu Bay", "Rongo (border)"],
+    
+    "Migori": ["Migori Town", "Awendo", "Isebania", "Rongo", "Kebera"],
+    
+    "Kisii": ["Kisii Town", "Nyamache", "Keroka", "Ogembo", "Suneka"],
+    
+    "Nyamira": ["Nyamira Town", "Keroka", "Manga", "Ekerenyo"]
+};
 
         function populateTowns() {
             const countySelect = document.getElementById('county');

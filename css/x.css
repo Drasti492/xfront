@@ -33,11 +33,13 @@ body {
     position: sticky;
     top: 80px;
     z-index: 40;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 .category-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
     padding: 12px 20px;
     max-width: 1200px;
@@ -204,4 +206,33 @@ body {
 #checkout-cart-items {
     max-height: 400px;
     overflow-y: auto;
+}
+
+
+
+
+.product-card {
+    min-height: 100%;
+}
+
+@media (max-width: 640px) {
+    .product-card {
+        border-radius: 16px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    .product-card h4 {
+        font-size: 1rem;
+    }
+
+    .product-card .desc {
+        font-size: 0.85rem;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
 }
