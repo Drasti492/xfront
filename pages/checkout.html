@@ -178,23 +178,43 @@
     <script src="../js/cart.js"></script>
     <script src="../js/checkout.js"></script>
 
-    <div id="paymentModal" class="payment-modal hidden">
-  <div class="modal-card">
-    <div class="state loading-state active">
-      <div class="spinner"></div>
-      <h3>Processing Payment</h3>
-      <p>Check your phone to complete payment</p>
+    <div id="paymentModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+  <div class="bg-white w-[90%] max-w-md rounded-3xl p-8 text-center shadow-xl">
+
+    <!-- LOADING -->
+    <div class="state loading-state">
+      <div class="mx-auto w-16 h-16 border-4 border-pink-200 border-t-pink-600 rounded-full animate-spin mb-6"></div>
+      <h3 class="text-xl font-semibold mb-2">Waiting for Payment</h3>
+      <p class="text-gray-500 text-sm">
+        Check your phone and enter your M-Pesa PIN to complete payment.
+      </p>
     </div>
 
-    <div class="state success-state">
-      <div class="icon success">✔</div>
-      <h3>Payment Successful</h3>
+    <!-- SUCCESS -->
+    <div class="state success-state hidden">
+      <div class="text-green-500 text-5xl mb-4">✔</div>
+      <h3 class="text-xl font-semibold mb-2">Payment Successful 🎉</h3>
+      <p class="text-gray-500 text-sm">
+        Your order has been placed successfully.<br>
+        We will contact you when delivery is ready.
+      </p>
     </div>
 
-    <div class="state error-state">
-      <div class="icon error">✖</div>
-      <h3>Payment Failed</h3>
+    <!-- CANCELLED -->
+    <div class="state error-state hidden">
+      <div class="text-red-500 text-5xl mb-4">✖</div>
+      <h3 class="text-xl font-semibold mb-2">Payment Cancelled</h3>
+      <p class="text-gray-500 text-sm">
+        You cancelled the transaction.<br>
+        Your order has NOT been placed.
+      </p>
+
+      <button onclick="closeModal()" 
+        class="mt-6 w-full bg-pink-600 text-white py-3 rounded-xl">
+        Try Again
+      </button>
     </div>
+
   </div>
 </div>
 

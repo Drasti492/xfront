@@ -83,12 +83,18 @@ function normalizePhone(input) {
     return phone;
 }
 
-function showModal(state) {
+function showModal(type) {
     const modal = document.getElementById("paymentModal");
     modal.classList.remove("hidden");
+    modal.classList.add("flex");
 
-    document.querySelectorAll(".state").forEach(s => s.classList.remove("active"));
-    state.classList.add("active");
+    document.querySelectorAll(".state").forEach(s => s.classList.add("hidden"));
+
+    document.querySelector(`.${type}`).classList.remove("hidden");
+}
+
+function closeModal() {
+    document.getElementById("paymentModal").classList.add("hidden");
 }
 
 function submitOrder() {
@@ -107,11 +113,14 @@ function submitOrder() {
         return;
     }
 
-    const amount = parseInt(document.getElementById('checkout-total').textContent.replace('KSh ', ''));
+    const amount = parseInt(
+        document.getElementById('checkout-total')
+        .textContent.replace('KSh ', '')
+    );
 
-    showModal(document.querySelector(".loading-state"));
+    // SHOW LOADING
+    showModal("loading-state");
 
-    // INITIATE PAYMENT
     fetch("https://xback-hrom.onrender.com/api/payment/stk-push", {
         method: "POST",
         headers: {
@@ -125,7 +134,6 @@ function submitOrder() {
         if (!data.success) throw new Error("Payment failed");
 
         const reference = data.reference;
-
         let attempts = 0;
 
         const poll = setInterval(() => {
@@ -138,23 +146,28 @@ function submitOrder() {
                     if (statusData.status === "success") {
                         clearInterval(poll);
 
-                        showModal(document.querySelector(".success-state"));
+                        showModal("success-state");
 
-                        // SAVE ORDE AFTER PAYMEt SUCCESS
                         saveOrder();
 
-                    } else if (statusData.status === "failed" || attempts > 30) {
+                    } else if (statusData.status === "failed") {
                         clearInterval(poll);
-                        showModal(document.querySelector(".error-state"));
+
+                        showModal("error-state");
+
+                    } else if (attempts > 30) {
+                        clearInterval(poll);
+
+                        showModal("error-state");
                     }
                 });
 
-        }, 4000);
+        }, 3000);
 
     })
     .catch(err => {
         console.error(err);
-        showModal(document.querySelector(".error-state"));
+        showModal("error-state");
     });
 }
 
