@@ -72,6 +72,24 @@
             document.getElementById('checkout-subtotal').textContent = `KSh ${subtotal}`;
             document.getElementById('checkout-total').textContent = `KSh ${subtotal}`;
         }
+function normalizePhone(input) {
+    let phone = input.replace(/\D/g, "");
+
+    if (phone.startsWith("0")) phone = "254" + phone.slice(1);
+    if (phone.length === 9) phone = "254" + phone;
+
+    if (!phone.startsWith("254") || phone.length !== 12) return null;
+
+    return phone;
+}
+
+function showModal(state) {
+    const modal = document.getElementById("paymentModal");
+    modal.classList.remove("hidden");
+
+    document.querySelectorAll(".state").forEach(s => s.classList.remove("active"));
+    state.classList.add("active");
+}
 
 function submitOrder() {
     const form = document.getElementById('checkout-form');
@@ -81,13 +99,71 @@ function submitOrder() {
         return;
     }
 
+    const phoneInput = document.getElementById("paymentPhone").value;
+    const phone = normalizePhone(phoneInput);
+
+    if (!phone) {
+        alert("Enter valid M-Pesa number");
+        return;
+    }
+
+    const amount = parseInt(document.getElementById('checkout-total').textContent.replace('KSh ', ''));
+
+    showModal(document.querySelector(".loading-state"));
+
+    // STEP 1: INITIATE PAYMENT
+    fetch("https://xback-hrom.onrender.com/api/payment/stk-push", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ phone, amountKES: amount })
+    })
+    .then(res => res.json())
+    .then(data => {
+
+        if (!data.success) throw new Error("Payment failed");
+
+        const reference = data.reference;
+
+        let attempts = 0;
+
+        const poll = setInterval(() => {
+            attempts++;
+
+            fetch(`https://xback-hrom.onrender.com/api/payment/status/${reference}`)
+                .then(res => res.json())
+                .then(statusData => {
+
+                    if (statusData.status === "success") {
+                        clearInterval(poll);
+
+                        showModal(document.querySelector(".success-state"));
+
+                        // SAVE ORDER AFTER PAYMENT SUCCESS
+                        saveOrder();
+
+                    } else if (statusData.status === "failed" || attempts > 30) {
+                        clearInterval(poll);
+                        showModal(document.querySelector(".error-state"));
+                    }
+                });
+
+        }, 4000);
+
+    })
+    .catch(err => {
+        console.error(err);
+        showModal(document.querySelector(".error-state"));
+    });
+}
+
+function saveOrder() {
     const orderData = {
         items: JSON.parse(localStorage.getItem('luminaCart')) || [],
         total: parseInt(document.getElementById('checkout-total').textContent.replace('KSh ', '')),
         name: document.getElementById('name').value,
         phone: document.getElementById('phone').value,
-        emergency: document.getElementById('emergency').value,
-        email: document.getElementById('email').value,
         county: document.getElementById('county').value,
         town: document.getElementById('town').value,
         address: document.getElementById('address').value,
@@ -101,19 +177,12 @@ function submitOrder() {
         },
         body: JSON.stringify(orderData)
     })
-    .then(res => res.json())
-    .then(data => {
-        console.log(data);
-
-        alert(" Order placed successfully!");
-
+    .then(() => {
         localStorage.removeItem('luminaCart');
 
-        window.location.href = "../index.html";
-    })
-    .catch(err => {
-        console.error(err);
-        alert("Failed to place order. Try again.");
+        setTimeout(() => {
+            window.location.href = "../index.html";
+        }, 3000);
     });
 }
 
