@@ -75,12 +75,59 @@ function updateTotals() {
 }
 
 function checkout() {
-    if (cart.length === 0) return;
-    alert("✅ Thank you! checkout successful.\nYour order has been placed.");
+    if (cart.length === 0) {
+        alert("Cart is empty");
+        return;
+    }
+
+    const phone = prompt("Enter your phone number:");
+    const location = prompt("Enter your delivery location:");
+
+    if (!phone || !location) {
+        alert("Phone and location are required");
+        return;
+    }
+
+    const orderData = {
+        items: cart,
+        total: cart.reduce((sum, item) => sum + item.price * item.qty, 0),
+        phone,
+        location
+    };
+
+    fetch("https://xback-hrom.onrender.com/api/orders", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(orderData)
+})
+.then(res => {
+    if (!res.ok) {
+        throw new Error("Server error");
+    }
+    return res.json();
+})
+.then(data => {
+    console.log(data);
+
+    if (data.error) {
+        alert("Failed to place order");
+        return;
+    }
+
+    alert("Order placed successfully!");
+
     cart = [];
     localStorage.setItem('luminaCart', JSON.stringify(cart));
+
     renderCart();
     updateCartCount();
+})
+.catch(err => {
+    console.error(err);
+    alert(" Failed to place order");
+});
 }
 
 window.addEventListener('load', renderCart);

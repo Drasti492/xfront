@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Lumina Intimates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/x.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#fff0f5] text-gray-800 overflow-x-hidden">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="bg-white border-b border-pink-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 bg-pink-600 rounded-3xl flex items-center justify-center">
+                    <span class="text-white text-3xl font-bold tracking-tighter">LI</span>
+                </div>
+                <span class="text-3xl font-semibold text-pink-600 tracking-tighter">Lumina</span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-x-10 text-base font-medium">
+                <a href="../index.html" class="hover:text-pink-600">Home</a>
+                <a href="her.html" class="hover:text-pink-600">For Her</a>
+                <a href="him.html" class="hover:text-pink-600">For Him</a>
+                <a href="cart.html" class="hover:text-pink-600">Cart</a>
+            </div>
+
+            <button onclick="window.location.href='cart.html'" 
+                class="flex items-center gap-x-2 text-gray-700 hover:text-pink-600">
+                <i class="fas fa-shopping-bag text-2xl"></i>
+                <span id="cart-count" class="font-semibold text-pink-600">0</span>
+            </button>
+
+            <button id="hamburger" class="md:hidden text-3xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-8">
+            <div class="flex flex-col gap-y-6 text-lg font-medium">
+                <a href="../index.html" onclick="toggleMobileMenu()" class="hover:text-pink-600">Home</a>
+                <a href="her.html" onclick="toggleMobileMenu()" class="hover:text-pink-600">For Her</a>
+                <a href="him.html" onclick="toggleMobileMenu()" class="hover:text-pink-600">For Him</a>
+                <a href="cart.html" onclick="toggleMobileMenu()" class="hover:text-pink-600">Cart</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CHECKOUT -->
+    <section class="py-20 bg-white min-h-screen">
+        <div class="max-w-7xl mx-auto px-6">
+            <h1 class="text-5xl font-semibold tracking-tight mb-12">Checkout</h1>
+
+            <div class="grid md:grid-cols-12 gap-12">
+                <!-- LEFT: FORM -->
+                <div class="md:col-span-7">
+                    <div class="bg-white border border-pink-100 rounded-3xl p-8 md:p-10">
+                        <h2 class="text-2xl font-semibold mb-8">Delivery Information</h2>
+
+                        <form id="checkout-form" class="space-y-8">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" required class="w-full px-5 py-4 border border-pink-200 rounded-2xl focus:outline-none focus:border-pink-600">
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" required placeholder="07XXXXXXXX" class="w-full px-5 py-4 border border-pink-200 rounded-2xl focus:outline-none focus:border-pink-600">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Emergency Phone (optional)</label>
+                                    <input type="tel" id="emergency" placeholder="07XXXXXXXX" class="w-full px-5 py-4 border border-pink-200 rounded-2xl focus:outline-none focus:border-pink-600">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Email (optional)</label>
+                                <input type="email" id="email" class="w-full px-5 py-4 border border-pink-200 rounded-2xl focus:outline-none focus:border-pink-600">
+                            </div>
+
+                            <!-- County -->
+                            <div>
+                                <label class="block text-sm font-medium mb-2">County</label>
+                                <select id="county" required class="w-full px-5 py-4 border border-pink-200 rounded-2xl focus:outline-none focus:border-pink-600">
+                                    <option value="">Select County</option>
+                                    <option value="Nairobi">Nairobi</option>
+                                    <option value="Kiambu">Kiambu</option>
+                                    <option value="Nakuru">Nakuru</option>
+                                    <option value="Kisumu">Kisumu</option>
+                                    <option value="Mombasa">Mombasa</option>
+                                    <option value="Uasin Gishu">Uasin Gishu (Eldoret)</option>
+                                    <option value="Nandi">Nandi</option>
+                                    <option value="Kericho">Kericho</option>
+                                    <option value="Bomet">Bomet</option>
+                                    <option value="Kakamega">Kakamega</option>
+                                    <option value="Bungoma">Bungoma</option>
+                                    <option value="Busia">Busia</option>
+                                    <option value="Nyeri">Nyeri</option>
+                                    <option value="Meru">Meru</option>
+                                    <option value="Machakos">Machakos</option>
+                                    <option value="Kajiado">Kajiado</option>
+                                    <option value="Kilifi">Kilifi</option>
+                                    <option value="Kwale">Kwale</option>
+                                </select>
+                            </div>
+
+                            <!-- Town -->
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Town / Area</label>
+                                <select id="town" required class="w-full px-5 py-4 border border-pink-200 rounded-2xl focus:outline-none focus:border-pink-600">
+                                    <option value="">Select Town first</option>
+                                </select>
+                            </div>
+
+                            <!-- Full Address -->
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Full Delivery Address / Landmarks</label>
+                                <textarea id="address" rows="4" required placeholder="House number, Street, Estate, Nearest landmark"
+                                    class="w-full px-5 py-4 border border-pink-200 rounded-2xl focus:outline-none focus:border-pink-600"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- RIGHT: ORDER SUMMARY (Receipt style) -->
+                <div class="md:col-span-5">
+                    <div class="bg-pink-50 rounded-3xl p-8 sticky top-8">
+                        <h3 class="text-2xl font-semibold mb-8">Order Summary</h3>
+
+                        <div id="checkout-cart-items" class="space-y-6 mb-10"></div>
+
+                        <div class="space-y-4 border-t border-pink-200 pt-6">
+                            <div class="flex justify-between text-lg">
+                                <span>Subtotal</span>
+                                <span id="checkout-subtotal" class="font-medium">KSh 0</span>
+                            </div>
+                            <div class="flex justify-between text-lg">
+                                <span>Shipping</span>
+                                <span class="text-green-600 font-medium">FREE</span>
+                            </div>
+                            <hr class="border-pink-200 my-4">
+                            <div class="flex justify-between text-2xl font-semibold">
+                                <span>Total</span>
+                                <span id="checkout-total" class="text-pink-600">KSh 0</span>
+                            </div>
+                        </div>
+
+                        <button onclick="submitOrder()" 
+                                class="mt-12 w-full bg-pink-600 hover:bg-pink-700 text-white py-6 rounded-3xl font-semibold text-lg transition-all">
+                            PLACE ORDER
+                        </button>
+
+                        <a href="cart.html" class="block text-center text-pink-600 mt-6 hover:underline">
+                            ← Back to Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white/70 py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+            © 2026 Lumina Intimates Kenya. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="../js/x.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/checkout.js"></script>
+
+</body>
+</html>

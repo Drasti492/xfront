@@ -210,3 +210,23 @@ body {
         padding: 6px 14px;
     }
 }
+
+/* CHECKOUT SPECIFIC STYLES */
+#checkout-form input,
+#checkout-form select,
+#checkout-form textarea {
+    transition: all 0.3s ease;
+}
+
+#checkout-form input:focus,
+#checkout-form select:focus,
+#checkout-form textarea:focus {
+    border-color: var(--pink);
+    box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+}
+
+/* Receipt look for summary */
+#checkout-cart-items {
+    max-height: 400px;
+    overflow-y: auto;
+}
